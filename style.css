@@ -46,7 +46,7 @@
 
 
 .banner{
-    background-image: url(/images/banner.jpg);
+    background-image: url(images/banner.jpg);
     height: 600px;
     background-repeat: no-repeat;
     padding: 150px 0;
