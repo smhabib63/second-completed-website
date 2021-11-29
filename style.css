@@ -23,6 +23,7 @@
     border-right:2px solid white;
     padding: 0;
     margin: 0;
+    position: relative;
     
 }
 .menu ul li a{
@@ -31,12 +32,41 @@
     color: white;
     font-size: 20px;
     line-height: 40px;
-    display: inline-block;
+    display: block;
     
 }
 .menu ul li a:hover {
     background-color: #9b59b6;
 }
+
+
+.menu ul ul li{
+    float: none;
+    border: none;
+   
+}
+
+.menu ul ul{
+    float: none;
+    margin: 0;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #6c5ce7;
+    display: none;
+    width: 110px;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+
+
+
+
+
+
+
+
 
 .headline{
     background-color: #e17055;
@@ -73,9 +103,13 @@
 }
 .footer{
     background-color: #ff7675;
+    
 }
 .footer p{
     margin-bottom: 0;
+}
+.social{
+    text-align: right;
 }
 .social a{
     margin-left: 15px;
@@ -83,4 +117,10 @@
     text-decoration: none;
     padding: 5px;
     font-size: 15px;
+}
+.social a:hover{
+    background-color: #74b9ff;
+    padding: 15px 10px;
+    font-weight: bold;
+    border-radius: 5px;
 }
